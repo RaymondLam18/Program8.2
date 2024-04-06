@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Naruto Handsign</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+<body>
+<h1>Naruto Hand Signs</h1>
+
+<section id="demos" class="invisible">
+    <div id="liveView" class="videoView">
+        <button id="webcamButton" class="mdc-button mdc-button--raised">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">ENABLE WEBCAM</span>
+        </button>
+        <div style="position: relative;">
+            <video id="webcam" style="position: absolute" autoplay playsinline></video>
+            <canvas class="output_canvas" id="output_canvas" style="position: absolute; left: 0; top: 0;"></canvas>
+        </div>
+    </div>
+
+    <p id="handposeName"></p>
+    <p id="feedback"></p>
+
+    <p id="prediction"></p>
+    <div id="controls">
+        <button id="predictButton" class="mdc-button mdc-button--raised">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Predict</span>
+        </button>
+    </div>
+    <p>Correct Predictions: <span id="correctCount">0</span></p>
+</section>
+<button id="showCheatsheetButton">Show Cheatsheet</button>
+<img id="cheatsheet" src="./img.png" alt="Naruto Handsign Cheatsheet" style="display: none;">
+
+<script type="module" src="./game.js"></script>
+</body>
+</body>
+</html>

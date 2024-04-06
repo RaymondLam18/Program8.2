@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFA500; /* Oranje achtergrondkleur */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Witte tekstkleur */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffdd33;
+}
+
+button#predictButton,
+button#webcamButton {
+    background-color: #000; /* Zwarte achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+}
+
+button#predictButton:hover,
+button#webcamButton:hover {
+    background-color: #333; /* Donkergrijze achtergrondkleur bij hover */
+}
+
+
+#cheatsheet {
+    display: none;
+    max-width: 1000px; /* Maximale breedte van 300 pixels */
+    max-height: 1000px; /* Maximale hoogte van 400 pixels */
+    margin: 20px auto;
+    border: 3px solid #333;
+}
+
+
+#webcam {
+    display: none;
+}
+
+#demos {
+    text-align: center;
+}
+
+#prediction, #feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

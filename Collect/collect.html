@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hand Sign Collect</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+<body>
+<h1>Hand Sign Collect/h1>
+
+<section id="demos" class="invisible">
+  <div id="liveView" class="videoView">
+    <button id="webcamButton" class="mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label">ENABLE WEBCAM</span>
+    </button>
+    <div style="position: relative;">
+      <video id="webcam" style="position: absolute" autoplay playsinline></video>
+      <canvas class="output_canvas" id="output_canvas" style="position: absolute; left: 0; top: 0;"></canvas>
+    </div>
+  </div>
+  <div id="controls">
+    <label for="handsignSelect">Select Handsign:</label>
+    <select id="handsignSelect">
+      <option value="dragon">Dragon</option>
+      <option value="tiger">Tiger</option>
+      <option value="dog">Dog</option>
+      <option value="rat">Rat</option>
+      <option value="ram">Ram</option>
+      <option value="horse">Horse</option>
+      <option value="monkey">Monkey</option>
+      <option value="bird">Bird</option>
+      <option value="ox">Ox</option>
+      <option value="serpent">Serpent</option>
+      <option value="hare">Hare</option>
+      <option value="boar">Boar</option>
+    </select>
+    <button id="saveButton" class="mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label">Save Data</span>
+    </button>
+    <button id="exportButton" class="mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label">Export</span>
+    </button>
+  </div>
+</section>
+
+<script type="module" src="./collect.js"></script>
+</body>
+</body>
+</html>
