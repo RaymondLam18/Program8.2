@@ -2,7 +2,7 @@ import { HandLandmarker, FilesetResolver } from "https://cdn.jsdelivr.net/npm/@m
 
 import kNear from "../Test/knear.js"
 
-const k = 3
+const k = 2
 const machine = new kNear(k);
 let dataSet = []
 let correctPredictions = 0;
